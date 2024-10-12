@@ -4,23 +4,7 @@
     <meta charset="UTF-8">
     <title>Taniti Island - Attractions</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        /* Reuse styles from index.html for consistency */
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        header, nav, footer { background-color: #006a71; color: white; }
-        nav ul { list-style-type: none; padding: 10px; display: flex; justify-content: center; }
-        nav ul li { margin: 0 15px; }
-        nav ul li a { color: white; text-decoration: none; }
-        .content { padding: 20px; }
-        .content h2 { text-align: center; }
-        .attraction { margin-bottom: 20px; }
-        .attraction img { width: 100%; max-width: 600px; height: auto; }
-        footer { text-align: center; padding: 10px; }
-        @media (max-width: 600px) {
-            nav ul { flex-direction: column; }
-            nav ul li { margin: 5px 0; }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -30,29 +14,64 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="attractions.html">Attractions</a></li>
                 <li><a href="accommodations.html">Accommodations</a></li>
+                <li><a href="budget.html">Travel on a Budget</a></li>
+                <li><a href="customs.html">Customs & Laws</a></li>
+                <li><a href="healthcare.html">Healthcare & Safety</a></li>
+                <li><a href="faq.html">FAQ</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
     <section class="content">
         <h2>Discover Our Attractions</h2>
-        <div class="attraction">
-            <h3>Yellow Leaf Bay</h3>
-            <img src="https://via.placeholder.com/600x300" alt="Yellow Leaf Bay">
-            <p>Enjoy boating and fishing in our safe harbor.</p>
+        <div class="attraction" id="beaches">
+            <h3>Beaches</h3>
+            <img src="images/beach.jpg" alt="Beaches of Taniti">
+            <p>
+                Taniti boasts miles of pristine white sandy beaches with crystal-clear waters perfect for swimming, sunbathing, and water sports. Whether you're looking to relax under the sun or engage in activities like snorkeling and paddleboarding, our beaches offer something for everyone.
+            </p>
+            <ul>
+                <li>White Sands Beach: Ideal for families and picnics.</li>
+                <li>Coral Cove: Perfect for snorkeling and diving.</li>
+                <li>Sunset Bay: Enjoy breathtaking sunsets every evening.</li>
+            </ul>
+            <a href="https://maps.google.com/?q=Taniti+Beaches" target="_blank">View on Map</a>
         </div>
-        <div class="attraction">
-            <h3>Rainforest Zip-Lining</h3>
-            <img src="https://via.placeholder.com/600x300" alt="Rainforest Zip-Lining">
-            <p>Experience the thrill of zip-lining through the lush rainforest canopy.</p>
+        <div class="attraction" id="rainforest">
+            <h3>Rainforest Adventures</h3>
+            <img src="images/garden.jpg" alt="Rainforest of Taniti">
+            <p>
+                Explore the lush tropical rainforests of Taniti, home to diverse flora and fauna. Join guided hikes to discover hidden waterfalls, exotic wildlife, and the serene beauty of nature untouched by time.
+            </p>
+            <ul>
+                <li>Guided Hikes: Led by experienced local guides.</li>
+                <li>Zip-Lining: Glide through the canopy for a thrilling experience.</li>
+                <li>Bird Watching: Spot rare and endemic bird species.</li>
+            </ul>
+            <a href="https://maps.google.com/?q=Taniti+Rainforest" target="_blank">View on Map</a>
         </div>
-        <div class="attraction">
-            <h3>Local History Museum</h3>
-            <img src="https://via.placeholder.com/600x300" alt="Local History Museum">
-            <p>Learn about Taniti's rich cultural heritage.</p>
+        <div class="attraction" id="volcano">
+            <h3>Volcano Tours</h3>
+            <img src="images/moutains.jpg" alt="Volcano of Taniti">
+            <p>
+                Visit Taniti's active volcano for an unforgettable adventure. Guided tours take you safely to vantage points where you can witness the awe-inspiring power of nature. Night tours offer a spectacular view of glowing lava flows.
+            </p>
+            <ul>
+                <li>Day Tours: Learn about the geology and history.</li>
+                <li>Night Tours: Experience the volcanic glow.</li>
+                <li>Photography Expeditions: Capture stunning landscapes.</li>
+            </ul>
+            <a href="https://maps.google.com/?q=Taniti+Volcano" target="_blank">View on Map</a>
+            <a href="booking.html" class="book-button">Book Now</a>
         </div>
+        <!-- Add more attractions as needed -->
     </section>
     <footer>
+        <div class="footer-links">
+            <a href="customs.html">Customs & Laws</a> |
+            <a href="healthcare.html">Healthcare & Safety</a> |
+            <a href="faq.html">FAQ</a>
+        </div>
         <p>&copy; 2023 Taniti Tourism Board</p>
     </footer>
 </body>

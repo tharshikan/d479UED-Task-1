@@ -4,26 +4,7 @@
     <meta charset="UTF-8">
     <title>Taniti Island - Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        /* General Styles */
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        header, nav, footer { background-color: #006a71; color: white; }
-        nav ul { list-style-type: none; padding: 10px; display: flex; justify-content: center; }
-        nav ul li { margin: 0 15px; }
-        nav ul li a { color: white; text-decoration: none; }
-        .hero { background-image: url('https://via.placeholder.com/1200x400'); background-size: cover; color: white; text-align: center; padding: 100px 0; }
-        .content { padding: 20px; }
-        .content h2 { text-align: center; }
-        .cards { display: flex; flex-wrap: wrap; justify-content: center; }
-        .card { background-color: #f4f4f4; margin: 10px; padding: 20px; width: 300px; text-align: center; }
-        footer { text-align: center; padding: 10px; }
-        /* Responsive Styles */
-        @media (max-width: 600px) {
-            .cards { flex-direction: column; align-items: center; }
-            nav ul { flex-direction: column; }
-            nav ul li { margin: 5px 0; }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -33,32 +14,47 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="attractions.html">Attractions</a></li>
                 <li><a href="accommodations.html">Accommodations</a></li>
+                <li><a href="budget.html">Travel on a Budget</a></li>
+                <li><a href="customs.html">Customs & Laws</a></li>
+                <li><a href="healthcare.html">Healthcare & Safety</a></li>
+                <li><a href="faq.html">FAQ</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
     <section class="hero">
         <h2>Your Paradise Awaits</h2>
-        <p>Discover the beauty and adventure of Taniti.</p>
+        <p>Discover the beauty and adventure of Taniti Island.</p>
     </section>
     <section class="content">
         <h2>Explore Taniti</h2>
         <div class="cards">
             <div class="card">
+                <img src="images/beach.jpg" alt="Beaches of Taniti">
                 <h3>Beaches</h3>
                 <p>Relax on our white sandy beaches and enjoy the crystal-clear waters.</p>
+                <a href="attractions.html#beaches">Learn More</a>
             </div>
             <div class="card">
+                <img src="images/garden.jpg" alt="Rainforest of Taniti">
                 <h3>Rainforest</h3>
                 <p>Experience the lush tropical rainforest and its diverse wildlife.</p>
+                <a href="attractions.html#rainforest">Learn More</a>
             </div>
             <div class="card">
+                <img src="images/moutains.jpg" alt="Volcano of Taniti">
                 <h3>Volcano Tours</h3>
                 <p>Visit our active volcano for an unforgettable adventure.</p>
+                <a href="attractions.html#volcano">Learn More</a>
             </div>
         </div>
     </section>
     <footer>
+        <div class="footer-links">
+            <a href="customs.html">Customs & Laws</a> |
+            <a href="healthcare.html">Healthcare & Safety</a> |
+            <a href="faq.html">FAQ</a>
+        </div>
         <p>&copy; 2023 Taniti Tourism Board</p>
     </footer>
 </body>

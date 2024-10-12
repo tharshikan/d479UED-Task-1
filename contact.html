@@ -4,25 +4,7 @@
     <meta charset="UTF-8">
     <title>Taniti Island - Contact Us</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        /* Reuse styles for consistency */
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        header, nav, footer { background-color: #006a71; color: white; }
-        nav ul { list-style-type: none; padding: 10px; display: flex; justify-content: center; }
-        nav ul li { margin: 0 15px; }
-        nav ul li a { color: white; text-decoration: none; }
-        .content { padding: 20px; }
-        .content h2 { text-align: center; }
-        .contact-form { max-width: 600px; margin: 0 auto; }
-        .contact-form label { display: block; margin: 10px 0 5px; }
-        .contact-form input, .contact-form textarea { width: 100%; padding: 10px; }
-        .contact-form button { margin-top: 10px; padding: 10px 20px; }
-        footer { text-align: center; padding: 10px; }
-        @media (max-width: 600px) {
-            nav ul { flex-direction: column; }
-            nav ul li { margin: 5px 0; }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -32,12 +14,19 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="attractions.html">Attractions</a></li>
                 <li><a href="accommodations.html">Accommodations</a></li>
+                <li><a href="budget.html">Travel on a Budget</a></li>
+                <li><a href="customs.html">Customs & Laws</a></li>
+                <li><a href="healthcare.html">Healthcare & Safety</a></li>
+                <li><a href="faq.html">FAQ</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
     <section class="content">
         <h2>Get in Touch</h2>
+        <p>
+            We'd love to hear from you! Whether you have questions about planning your trip, need assistance with bookings, or want to provide feedback, our team is here to help.
+        </p>
         <div class="contact-form">
             <form action="#" method="post">
                 <label for="name">Name:</label>
@@ -52,8 +41,19 @@
                 <button type="submit">Send Message</button>
             </form>
         </div>
+        <h3>Contact Information</h3>
+        <p>
+            <strong>Email:</strong> info@visit-taniti.com<br>
+            <strong>Phone:</strong> +1 (555) 987-6543<br>
+            <strong>Address:</strong> 123 Paradise Road, Taniti City, Taniti Island
+        </p>
     </section>
     <footer>
+        <div class="footer-links">
+            <a href="faq.html">FAQ</a> |
+            <a href="customs.html">Customs & Laws</a> |
+            <a href="healthcare.html">Healthcare & Safety</a>
+        </div>
         <p>&copy; 2023 Taniti Tourism Board</p>
     </footer>
 </body>

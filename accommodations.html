@@ -4,58 +4,73 @@
     <meta charset="UTF-8">
     <title>Taniti Island - Accommodations</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        /* Reuse styles for consistency */
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        header, nav, footer { background-color: #006a71; color: white; }
-        nav ul { list-style-type: none; padding: 10px; display: flex; justify-content: center; }
-        nav ul li { margin: 0 15px; }
-        nav ul li a { color: white; text-decoration: none; }
-        .content { padding: 20px; }
-        .content h2 { text-align: center; }
-        .accommodation { margin-bottom: 20px; }
-        .accommodation img { width: 100%; max-width: 600px; height: auto; }
-        footer { text-align: center; padding: 10px; }
-        @media (max-width: 600px) {
-            nav ul { flex-direction: column; }
-            nav ul li { margin: 5px 0; }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Taniti Accommodations</h1>
+        <h1>Stay with Us</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="attractions.html">Attractions</a></li>
                 <li><a href="accommodations.html">Accommodations</a></li>
+                <li><a href="budget.html">Travel on a Budget</a></li>
+                <li><a href="customs.html">Customs & Laws</a></li>
+                <li><a href="healthcare.html">Healthcare & Safety</a></li>
+                <li><a href="faq.html">FAQ</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
     <section class="content">
-        <h2>Stay with Us</h2>
+        <h2>Accommodations</h2>
         <div class="accommodation">
             <h3>Four-Star Resort</h3>
-            <img src="https://via.placeholder.com/600x300" alt="Four-Star Resort">
-            <p>Experience luxury at our premier resort.</p>
-            <a href="#">Book Now</a>
+            <img src="images/garden2.jpg" alt="Four-Star Resort">
+            <p>
+                Experience luxury at Taniti's premier four-star resort. Enjoy world-class amenities including spa services, gourmet dining, and oceanfront views.
+            </p>
+            <ul>
+                <li>Oceanfront Suites</li>
+                <li>Spa and Wellness Center</li>
+                <li>Fine Dining Restaurants</li>
+            </ul>
+            <a href="booking.html" class="book-button">Book Now</a>
         </div>
         <div class="accommodation">
             <h3>Family-Owned Hotels</h3>
-            <img src="https://via.placeholder.com/600x300" alt="Family-Owned Hotels">
-            <p>Enjoy a homely stay with local families.</p>
-            <a href="#">Learn More</a>
+            <img src="images/beach.jpg" alt="Family-Owned Hotels">
+            <p>
+                Stay in one of our charming family-owned hotels, offering personalized service and a cozy atmosphere that makes you feel at home.
+            </p>
+            <ul>
+                <li>Comfortable Rooms</li>
+                <li>Friendly Staff</li>
+                <li>Central Locations</li>
+            </ul>
+            <a href="booking.html" class="book-button">Book Now</a>
         </div>
         <div class="accommodation">
             <h3>Bed and Breakfasts</h3>
-            <img src="https://via.placeholder.com/600x300" alt="Bed and Breakfasts">
-            <p>Cozy and comfortable B&Bs across the island.</p>
-            <a href="#">View Options</a>
+            <img src="images/garden.jpg" alt="Bed and Breakfasts">
+            <p>
+                Enjoy a homely stay with our delightful bed and breakfasts. Wake up to a homemade breakfast and warm hospitality.
+            </p>
+            <ul>
+                <li>Cozy Accommodations</li>
+                <li>Homemade Breakfast</li>
+                <li>Local Insights</li>
+            </ul>
+            <a href="booking.html" class="book-button">Book Now</a>
         </div>
+        <!-- Add more accommodations as needed -->
     </section>
     <footer>
+        <div class="footer-links">
+            <a href="customs.html">Customs & Laws</a> |
+            <a href="healthcare.html">Healthcare & Safety</a> |
+            <a href="faq.html">FAQ</a>
+        </div>
         <p>&copy; 2023 Taniti Tourism Board</p>
     </footer>
 </body>
